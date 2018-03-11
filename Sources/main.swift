@@ -16,6 +16,8 @@
 //
 //===----------------------------------------------------------------------===//
 //
+import Foundation
+
 import PerfectLib
 import PerfectHTTP
 import PerfectHTTPServer
@@ -23,7 +25,11 @@ import PerfectSession
 import OAuth2
 import PerfectRequestLogger
 
-// NOTE: Facebook config vars are in /config/ApplictionConfiguration.json
+
+FileManager.default.changeCurrentDirectoryPath(#file.deletingLastFilePathComponent + "/..")
+
+
+// NOTE: Facebook config vars are in /config/ApplicationConfiguration.json
 // Then they are loaded here:
 config()
 
